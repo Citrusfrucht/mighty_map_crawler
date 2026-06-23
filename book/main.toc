@@ -1,0 +1,6 @@
+\contentsline {chapter}{\numberline {1}The Game}{1}{}%
+\contentsline {section}{\numberline {1.1}What is the Mighty Map Crawler?}{1}{}%
+\contentsline {section}{\numberline {1.2}Before you play}{1}{}%
+\contentsline {section}{\numberline {1.3}The Dungeon Map}{1}{}%
+\contentsline {section}{\numberline {1.4}Monster Cards}{1}{}%
+\contentsline {chapter}{\numberline {2}Scenarios}{5}{}%
