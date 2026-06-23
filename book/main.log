@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.5.27)  23 JUN 2026 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.5.27)  23 JUN 2026 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,31 +137,34 @@ File: TeX_files/ScenarioBaseMap.jpg Graphic file (type jpg)
 <use TeX_files/ScenarioBaseMap.jpg>
 Package pdftex.def Info: TeX_files/ScenarioBaseMap.jpg  used on input line 12.
 (pdftex.def)             Requested size: 272.99881pt x 272.98796pt.
-) [1
 
+Underfull \vbox (badness 5939) has occurred while \output is active []
 
-] [2 <./TeX_files/ScenarioBaseMap.jpg>] [3]
-\openout2 = `./TeX_files/chapter02.aux'.
-
- (./TeX_files/chapter02.tex
-[4
-
-
+ [1
 
 
 ]
+[2 <./TeX_files/ScenarioBaseMap.jpg>] [3]) [4]
+\openout2 = `./TeX_files/chapter02.aux'.
+
+ (./TeX_files/chapter02.tex
 Chapter 2.
-) [5] [6
+) [5
+
+
+
+
+] [6
 
 
 
 ] (./main.aux (./TeX_files/chapter01.aux) (./TeX_files/chapter02.aux)) ) 
 Here is how much of TeX's memory you used:
- 1443 strings out of 476041
- 25207 string characters out of 5793174
- 1853388 words of memory out of 6000000
- 21908 multiletter control sequences out of 15000+600000
- 518453 words of font info for 52 fonts, out of 8000000 for 9000
+ 1444 strings out of 476041
+ 25224 string characters out of 5793174
+ 1856388 words of memory out of 6000000
+ 21909 multiletter control sequences out of 15000+600000
+ 518760 words of font info for 53 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  57i,7n,62p,606b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/s
@@ -170,7 +173,7 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (10 pages, 1863767 bytes).
+Output written on main.pdf (10 pages, 1867618 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
