@@ -17,7 +17,7 @@ In figure \ref{fig:scenariobasemap} you can see a simple scenario base map
 
 \section{Monsters}
 \subsection{Monster cards}
-Your enemies in this game are monsters. Each monster has four stats: lifepoints (LP), movement range (M), Range of Sight (RoS) and attack (A). Monsters can also have \textit{conditional actions}, which are performed each time the requirements are met. Some monsters also have an attack range (AR).
+Your enemies in this game are monsters. Each monster has four stats: lifepoints (LP), movement range (M), Range of Detection (RoD) and attack (A). Monsters can also have \textit{conditional actions}, which are performed each time the requirements are met. Some monsters also have an attack range (AR).
 \subsection{Monster turn}
 Before a monster does anything, a target is selected. Each monster first moves on its turn, then attacks if possible. When the movement phase is finished, it is not possible to continue to move with the remaining movement range. When the requirements for a conditional action are met during the turn of a monster, this action is immediately performed, the target selection processed again after execution of the conditional turns and the rest of the turn continues at the point of interruption. Movement range is preserved during turns.
 \begin{enumerate}
@@ -27,18 +27,24 @@ Before a monster does anything, a target is selected. Each monster first moves o
 \end{enumerate}
 \subsection{Target selection}
 The following selection criteria are processed one after another: As soon as one is met by exactly one entity, the entity is selected as the target for this round. When two or more are eligible as targets, the next criteria is checked. When no (unique) target can be found this way, the monster looses it's turn.
-
 \begin{enumerate}
-	\item {Is in range of detection}
-	\item {(Manhattan)Distance is lowest}
-	\item {Initiative is highest}
-	\item {Movement Range is highest}
-	\item {Attack is highest}
+	\item Is in range of detection
+	\item (Manhattan)Distance is lowest
+	\item Initiative is highest
+	\item Movement Range is highest
+	\item Attack is highest
 \end{enumerate}
-The range of detection is not influenced by obstacles. We use the Manhattan-distance as metric for the distance, that means no diagonal moves are allowed.\\ It is possible for a monster to move out of detection range of the target during its turn - This does not lead to a new target selection process! If the monster starts a new turn without a eligible target, despite having selected a target during its previous turn, this target is always lost, and the monster looses it's turn.
+
+The range of detection is not influenced by obstacles. We use the Manhattan-distance as metric for the distance, that means no diagonal moves are allowed.\\ \\It is possible for a monster to move out of detection range of the target during its turn - This does not lead to a new target selection process! If the monster starts a new turn without a eligible target, despite having selected a target during its previous turn, this target is always lost, and the monster looses it's turn.
 \subsection{Move}
 A monster moves the shortest possible path (again without performing diagonal moves) to its target. Whenever there are multiple paths to the target, it always chooses to turn left first. \\\textbf{Remember:} A movement can always be interrupted by a conditional action!\\A movement is always executed until the monster stands adjacent to it's target, even if the monster has a ranged attack.
 
 \subsection{Attack}
-The monster attacks the target. The attack damage is substracted from the life points of the target.
+The monster attacks the target, if it is inside the attack range. The attack damage is substracted from the life points of the target.
+
+\section{Character}
+Each player has to create a character before the game starts. While it is the most fun, one has to understand the basic mechanics of a players turn before making meaningful decisions. Let's go over the Character Turn first.
+\subsection{Character turns}
+
+
 

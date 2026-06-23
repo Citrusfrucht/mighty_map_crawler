@@ -1,11 +1,11 @@
-\contentsline {chapter}{\numberline {1}The Game}{1}{}%
-\contentsline {section}{\numberline {1.1}What is the Mighty Map Crawler?}{1}{}%
-\contentsline {section}{\numberline {1.2}Before you play}{1}{}%
-\contentsline {section}{\numberline {1.3}The Dungeon Map}{1}{}%
-\contentsline {section}{\numberline {1.4}Monsters}{3}{}%
-\contentsline {subsection}{\numberline {1.4.1}Monster cards}{3}{}%
-\contentsline {subsection}{\numberline {1.4.2}Monster turn}{3}{}%
-\contentsline {subsection}{\numberline {1.4.3}Target selection}{3}{}%
-\contentsline {subsection}{\numberline {1.4.4}Move}{4}{}%
-\contentsline {subsection}{\numberline {1.4.5}Attack}{4}{}%
-\contentsline {chapter}{\numberline {2}Scenarios}{5}{}%
+\contentsline {chapter}{\numberline {1}The Game}{2}{}%
+\contentsline {section}{\numberline {1.1}What is the Mighty Map Crawler?}{2}{}%
+\contentsline {section}{\numberline {1.2}Before you play}{2}{}%
+\contentsline {section}{\numberline {1.3}The Dungeon Map}{2}{}%
+\contentsline {section}{\numberline {1.4}Monsters}{4}{}%
+\contentsline {subsection}{\numberline {1.4.1}Monster cards}{4}{}%
+\contentsline {subsection}{\numberline {1.4.2}Monster turn}{4}{}%
+\contentsline {subsection}{\numberline {1.4.3}Target selection}{4}{}%
+\contentsline {subsection}{\numberline {1.4.4}Move}{5}{}%
+\contentsline {subsection}{\numberline {1.4.5}Attack}{5}{}%
+\contentsline {chapter}{\numberline {2}Scenarios}{6}{}%
