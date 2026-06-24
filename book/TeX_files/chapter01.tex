@@ -42,9 +42,32 @@ A monster moves the shortest possible path (again without performing diagonal mo
 \subsection{Attack}
 The monster attacks the target, if it is inside the attack range. The attack damage is substracted from the life points of the target.
 
-\section{Character}
-Each player has to create a character before the game starts. While it is the most fun, one has to understand the basic mechanics of a players turn before making meaningful decisions. Let's go over the Character Turn first.
-\subsection{Character turns}
+\section{Character rules}
+Each player has to select a character before the game starts. While it is the most fun, one has to understand the basic mechanics of a players turn before making meaningful decisions. 
+\subsection{Character turn}
+While similar to the monster turns, players have much more freedom of decision. They can move wherever they want, use some movement, attack, than moving again, and, and, and.
 
+\subsection{Stats}
+Characters have the four base stats movement range (M), life points(LP), attack dice (AD) and intelligence (I). While the first three are trivial, Intelligence is a stat used to cast spells. 
 
+\subsection{Attack}
+Players do not have flat attack like monsters, but rather can roll a number of dice according to their AD stat. For each rolled die above the damage threshold (i. g. 5) rolled, one damage is dealt. The damage threshold can be lowered by some characters by performing conditional actions. \\ The resulting damage is substracted from the monster life points, and is persistent across turns. Track the LP using pen and paper!
+
+\subsection{Move}
+You can again move according to your movement range without performing diagonal moves. In contrast to monsters,character movement can be interrupted by attack and later resumed. Pay special attention to your remaining movement range at all times.
+
+\subsection{Archetypes}
+Five Archetypes are provided below. At each level, pick one enhancement! You can never pick more than one enhancement per level.
+\subsubsection{Cleric}
+
+\begin{tabular}{c|c|c|c}
+	\uppercase{Movement} & \uppercase{Attack Die} & \uppercase{Intelligence} & \uppercase{Life points} \\
+	\hline
+	3 & 2 & 2 & 4 \\
+\end{tabular}
+
+\subsubsection*{Enhancements: Level 1}
+
+\textbf{Choice A:Emergency} \newline \uppercase{Condition:} Both at least one Enemy and at least one Friend are in range of two of you \newline \uppercase{Effect:} One Friend gains two LP\newline \newline
+\textbf{Choice B: Bane of the undead} \newline \uppercase{Condition:} An undead character is adjacent to the character.  \newline \uppercase{Effect:} You can move the adjacent undead by one field. 
 

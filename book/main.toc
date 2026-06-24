@@ -8,4 +8,11 @@
 \contentsline {subsection}{\numberline {1.4.3}Target selection}{4}{}%
 \contentsline {subsection}{\numberline {1.4.4}Move}{5}{}%
 \contentsline {subsection}{\numberline {1.4.5}Attack}{5}{}%
-\contentsline {chapter}{\numberline {2}Scenarios}{6}{}%
+\contentsline {section}{\numberline {1.5}Character rules}{5}{}%
+\contentsline {subsection}{\numberline {1.5.1}Character turn}{5}{}%
+\contentsline {subsection}{\numberline {1.5.2}Stats}{5}{}%
+\contentsline {subsection}{\numberline {1.5.3}Attack}{6}{}%
+\contentsline {subsection}{\numberline {1.5.4}Move}{6}{}%
+\contentsline {subsection}{\numberline {1.5.5}Archetypes}{6}{}%
+\contentsline {subsubsection}{Cleric}{6}{}%
+\contentsline {chapter}{\numberline {2}Scenarios}{7}{}%
