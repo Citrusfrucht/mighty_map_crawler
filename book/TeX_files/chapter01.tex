@@ -1,9 +1,13 @@
+
 \chapter{The Game}
 \section{What is the Mighty Map Crawler?}
 This is  a cooperative dungeon crawling game for 1 to 6 players, which can be played by everyone without the need for a game master or expensive equipment. \\ All you need is a printer, a dry-erase-map (or a piece of paper), and time! The character progress is consistent across a campaign.\\ \\ Every player starts by creating a character according to the rules on page XXX.\\ After that, a scenario is selected, which consists of a short introductory text, a scenario goal and a \textit{dungeon map}(see section \ref{dungeon_map_section}). 
 
 \section{Before you play}
 Print the monster and equipment cards, which should be included in your download.
+
+\section{How do you play?}
+
 
 \section{The Dungeon Map\label{dungeon_map_section}}
 In figure \ref{fig:scenariobasemap} you can see a simple scenario base map
@@ -29,13 +33,13 @@ Before a monster does anything, a target is selected. Each monster first moves o
 The following selection criteria are processed one after another: As soon as one is met by exactly one entity, the entity is selected as the target for this round. When two or more are eligible as targets, the next criteria is checked. When no (unique) target can be found this way, the monster looses it's turn.
 \begin{enumerate}
 	\item Is in range of detection
-	\item (Manhattan)Distance is lowest
+	\item Distance is lowest
 	\item Initiative is highest
 	\item Movement Range is highest
 	\item Attack is highest
 \end{enumerate}
 
-The range of detection is not influenced by obstacles. We use the Manhattan-distance as metric for the distance, that means no diagonal moves are allowed.\\ \\It is possible for a monster to move out of detection range of the target during its turn - This does not lead to a new target selection process! If the monster starts a new turn without a eligible target, despite having selected a target during its previous turn, this target is always lost, and the monster looses it's turn.
+The range of detection is not influenced by obstacles. Diagonal moves are never allowed for the measurements of range.\\ \\It is possible for a monster to move out of detection range of the target during its turn - This does not lead to a new target selection process! If the monster starts a new turn without a eligible target, despite having selected a target during its previous turn, this target is always lost, and the monster looses it's turn.
 \subsection{Move}
 A monster moves the shortest possible path (again without performing diagonal moves) to its target. Whenever there are multiple paths to the target, it always chooses to turn left first. \\\textbf{Remember:} A movement can always be interrupted by a conditional action!\\A movement is always executed until the monster stands adjacent to it's target, even if the monster has a ranged attack.
 
@@ -43,31 +47,89 @@ A monster moves the shortest possible path (again without performing diagonal mo
 The monster attacks the target, if it is inside the attack range. The attack damage is substracted from the life points of the target.
 
 \section{Character rules}
-Each player has to select a character before the game starts. While it is the most fun, one has to understand the basic mechanics of a players turn before making meaningful decisions. 
+Each player has to select a character before the game starts. While this is the most fun, one first has to understand the basic mechanics of a players turn before making meaningful decisions. 
 \subsection{Character turn}
-While similar to the monster turns, players have much more freedom of decision. They can move wherever they want, use some movement, attack, than moving again, and, and, and.
+Characters can perform two main actions on their turn, and unlimited conditional actions.\\Main actions are:
+\begin{enumerate}
+	\item Move
+	\item Attack
+	\item Cast a spell
+	\item Interact
+\end{enumerate}
 
 \subsection{Stats}
-Characters have the four base stats movement range (M), life points(LP), attack dice (AD) and intelligence (I). While the first three are trivial, Intelligence is a stat used to cast spells. 
-
-\subsection{Attack}
-Players do not have flat attack like monsters, but rather can roll a number of dice according to their AD stat. For each rolled die above the damage threshold (i. g. 5) rolled, one damage is dealt. The damage threshold can be lowered by some characters by performing conditional actions. \\ The resulting damage is substracted from the monster life points, and is persistent across turns. Track the LP using pen and paper!
+Characters have the four base stats movement range (M), life points(LP), attack dice (AD) and intelligence (I). While the first three are trivial, Intelligence is a stat used to cast spells. \\ You regain all stats at the end of each scenario.
 
 \subsection{Move}
 You can again move according to your movement range without performing diagonal moves. In contrast to monsters,character movement can be interrupted by attack and later resumed. Pay special attention to your remaining movement range at all times.
 
+\subsection{Attack}
+Players do not have flat attack like monsters, but rather can roll a number of dice according to their AD stat. For each rolled die above the damage threshold (for example 5) rolled, one damage is dealt. The damage threshold can be lowered by some characters by performing conditional actions. \\ The resulting damage is subtracted from the monster life points, and is persistent across turns. Track the LP using pen and paper.
+
+
+\subsection{Spells}
+You can pay one Intelligence to cast a spell on your turn.
+
+\subsection{Interact}
+In some situation a character has to interact with it's surroundings, for example open a door, pickup an item or loot a chest. 
+
+
 \subsection{Archetypes}
-Five Archetypes are provided below. At each level, pick one enhancement! You can never pick more than one enhancement per level.
+Five Archetypes are provided below. At each level, pick one enhancement. You can never pick more than one enhancement per level.\\
+\fcolorbox{black}{cyan}{\parbox{\linewidth}{
 \subsubsection{Cleric}
 
 \begin{tabular}{c|c|c|c}
 	\uppercase{Movement} & \uppercase{Attack Die} & \uppercase{Intelligence} & \uppercase{Life points} \\
 	\hline
-	3 & 2 & 2 & 4 \\
+	2 & 1 & 2 & 4 \\
 \end{tabular}
 
 \subsubsection*{Enhancements: Level 1}
 
-\textbf{Choice A:Emergency} \newline \uppercase{Condition:} Both at least one Enemy and at least one Friend are in range of two of you \newline \uppercase{Effect:} One Friend gains two LP\newline \newline
+\textbf{Choice A: Emergency} \newline \uppercase{Condition:} Both at least one Enemy and at least one Friend are in range of two of you \newline \uppercase{Effect:} One Friend gains two LP\newline \newline
 \textbf{Choice B: Bane of the undead} \newline \uppercase{Condition:} An undead character is adjacent to the character.  \newline \uppercase{Effect:} You can move the adjacent undead by one field. 
+\newline
+\subsubsection*{Spells}
+\textbf{Shimmer} \newline 
+\newline \uppercase{Effect:} Heal a friend in range of 2 by 1 LP\\
+\newline
+\textbf{Holy Needle} \newline 
+\newline \uppercase{Effect:} Substract 1 LP from an instance in a range of 3.
+}} %end of  
+\newline
+\fcolorbox{black}{magenta}{\parbox{\linewidth}{
 
+\subsubsection{Barbarian}
+
+\begin{tabular}{c|c|c|c}
+	\uppercase{Movement} & \uppercase{Attack Die} & \uppercase{Intelligence} & \uppercase{Life points} \\
+	\hline
+	4 & 3 & 0 & 5 \\
+\end{tabular}
+
+\subsubsection*{Enhancements: Level 1}
+
+\textbf{Choice A: Brutalist} \newline \uppercase{Condition:} You lost at least two LP in one instance \newline \uppercase{Effect:} Gain a \textbf{+1} \hyperref[ref:attack_marker]{Attack Marker} until the end of your turn\newline \newline
+\textbf{Choice B: Unexpected Charge} \newline \uppercase{Condition:} You have moved at least 3 Fields in a straight line AND hit a target \newline \uppercase{Effect:} Gain a \textbf{+1} \hyperref[ref:armor_marker]{Armor Marker} until the end of your turn.
+}} %end of frame
+\fcolorbox{black}{green}{\parbox{\linewidth}{
+		
+		\subsubsection{Hunter}
+		
+		\begin{tabular}{c|c|c|c}
+			\uppercase{Movement} & \uppercase{Attack Die} & \uppercase{Intelligence} & \uppercase{Life points} \\
+			\hline
+			4 & 3 & 0 & 3 \\
+		\end{tabular}
+		
+		\subsubsection*{Enhancements: Level 1}
+		
+		\textbf{Choice A: Calm Shot} \newline \uppercase{Condition:} You have no enemies in range of 2 or nearer AND you are the active player.\newline \uppercase{Effect:} Perform \hyperref[ref:ranged_attack]{ranged attack} of 4 or lower. Gain a   \hyperref[ref:disarmed]{Disarmed Marker} until the end of your turn. \newline \newline
+		\textbf{Choice B: Hit and roll} \newline \uppercase{Condition:} You hit a target \newline \uppercase{Effect:} Deal 2 extra damage. Add 2 movement range until the end of your turn
+}} %end of frame
+
+
+\chapter{References}
+\subsubsection*{Attack marker\label{ref:attack_marker}}
+\subsubsection*{Armor marker\label{ref:armor_marker}}
